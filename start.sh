@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# generate a random flag (idk if we care about this)
+# generate a random flag (idk if you care about this)
 R=$(echo $RANDOM | sha256sum | head -c 64) && \
     F="hidden{$R}" && \
     echo $F > /home/ctf/flag && \

@@ -1,0 +1,8 @@
+services:
+  task:
+    build:
+      context: ./task
+      dockerfile: Dockerfile
+    ports:
+      - "1337:9999"
+    restart: always
